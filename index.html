@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Palindrome Checker</title>
+</head>
+
+<body>
+	<div class="title-box">
+		<div class="title">
+			<h1>Palindrome Checker</h1>
+		</div>
+		<div class="title2">
+			<h2>What is a Palindrome Word? </h2>
+		</div>
+		<div class="def">
+			<h3>A palindrome is a word or sentence<br>
+				that's spelled the same way both forward and backward, <br>
+				ignoring punctuation, case, and spacing.</h3>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="formFrame">
+			<h5>Enter a word or sentance to see if it is a palindrome word!</h5>
+			<input class="input-box" type="text" id="inputString" placeholder="Enter a word, phrase or number"> <br>
+			<button onclick="checkPalindrome()">Check</button>
+			<div class="modal" id="responseModal">
+				<div class="modal-content">
+					<span class="close" onclick="closeModal()">&times;</span>
+					<p id="responseText"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="palindrome_check.js" type="text/javascript"></script>
+</body>
+</html>
